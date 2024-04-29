@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple Interest Calculator</h1>
+        <label for="principal">Principal Amount:</label><br>
+        <input type="number" id="principal" min="0" required placeholder="Enter the amount" class="full-width" /><br>
+        <label for="interestType">Interest Type:</label><br>
+        <select id="interestType" class="custom-select full-width">
+            <option value="percentage">Percentage (%)</option>
+            <option value="rupees">Rupees (INR)</option>
+        </select><br>
+        <label for="rate">Interest Rate :</label><br>
+        <input type="number" id="rate" min="0" step="0.01" required placeholder="Enter interest rate" class="full-width" /><br>
+        <label for="fromDate">From Date:</label>
+        <input type="date" id="fromDate" required class="full-width" /><br>
+        <label for="toDate">To Date:</label>
+        <input type="date" id="toDate" required class="full-width" /><br>
+        <div class="div1">
+            <button onclick="calculateInterest()" class="btnClass">Calculate</button>
+        </div>
+        <p id="result" class="amt-class"></p>
+        <p id="result1" class="amt-class"></p>
+        <p id="result2" class="amt-class"></p>
+        <p id="result3" class="amt-class"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
